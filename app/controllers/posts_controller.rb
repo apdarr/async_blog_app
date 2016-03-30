@@ -27,7 +27,7 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
 
     if @post.save
-      sleep(5)
+      Resque.enqueue(Sleeper, 5)
 
       flash[:notice] = "Post was created"
       redirect_to posts_path
