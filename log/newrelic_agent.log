@@ -45,3 +45,4 @@
 [2016-05-06 11:04:29 -0400 adarr-ltm.internal.salesforce.com (45537)] INFO : Doing deferred dependency-detection before Rack startup
 [2016-05-06 11:04:29 -0400 adarr-ltm.internal.salesforce.com (45537)] INFO : Installing Sinatra instrumentation
 [2016-05-06 11:04:31 -0400 adarr-ltm.internal.salesforce.com (45537)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1308506/applications/16928094
+[2016-05-06 11:14:02 -0400 adarr-ltm.internal.salesforce.com (45537)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1308506/applications/16928094

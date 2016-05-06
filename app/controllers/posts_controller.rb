@@ -5,7 +5,7 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @posts = Post.all
-    puts "Retrieving posts"
+    puts "count#index.load=1"
   end
 
   # GET /posts/1
