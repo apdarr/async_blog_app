@@ -11,3 +11,7 @@
 [06/06/16 10:28:18 -0400 adarr-ltm.internal.salesforce.com (84245)] WARN : No config file found at [/Users/adarr/Documents/code/async_blog_app/config/scout_apm.yml].
 [06/06/16 10:28:18 -0400 adarr-ltm.internal.salesforce.com (84245)] WARN : Monitoring isn't enabled for the [development] environment. Not starting agent
 [06/06/16 10:28:19 -0400 adarr-ltm.internal.salesforce.com (84245)] WARN : No config file found at [/Users/adarr/Documents/code/async_blog_app/config/scout_apm.yml].
+[06/06/16 10:33:11 -0400 adarr-ltm.internal.salesforce.com (84317)] INFO : Attempting to start Scout Agent [1.5.1] on [adarr-ltm.internal.salesforce.com]
+[06/06/16 10:33:11 -0400 adarr-ltm.internal.salesforce.com (84317)] WARN : No config file found at [/Users/adarr/Documents/code/async_blog_app/config/scout_apm.yml].
+[06/06/16 10:33:11 -0400 adarr-ltm.internal.salesforce.com (84317)] WARN : Monitoring isn't enabled for the [development] environment. Not starting agent
+[06/06/16 10:33:11 -0400 adarr-ltm.internal.salesforce.com (84317)] WARN : No config file found at [/Users/adarr/Documents/code/async_blog_app/config/scout_apm.yml].

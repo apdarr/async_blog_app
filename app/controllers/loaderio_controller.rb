@@ -1,4 +1,4 @@
-class LoaderIoController < ApplicationController
+class LoaderioController < ApplicationController
   def verify
     send_data token, :type => "text/plain",
                      :disposition => "inline"
