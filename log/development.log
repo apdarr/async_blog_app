@@ -3204,3 +3204,84 @@ Processing by LoaderioController#verify as HTML
   Rendered text template (0.3ms)
 Sent data  (0.7ms)
 Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-06-06 11:54:38 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (42.0ms)
+  Rendered posts/new.html.erb within layouts/application (47.4ms)
+Completed 200 OK in 114ms (Views: 112.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for ::1 at 2016-06-06 11:55:04 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L859kGZMH+q4Nm7A3ruWWsGrM4mHkliitiCKOXfoM9PK0rfATsUWwLfW3tTQv/05oa/W9oU8FXf3SshvxfD4Iw==", "post"=>{"name"=>"Loaderio1:name", "title"=>"Loaderio1:title", "content"=>"adfasdf"}, "commit"=>"Create Post"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (2.8ms)[0m  [1mINSERT INTO "posts" ("name", "title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Loaderio1:name"], ["title", "Loaderio1:title"], ["content", "adfasdf"], ["created_at", "2016-06-06 15:55:04.499244"], ["updated_at", "2016-06-06 15:55:04.499244"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 5.9ms)
+
+Redis::CannotConnectError (Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)):
+  app/controllers/posts_controller.rb:31:in `create'
+
+
+  Rendered /Users/adarr/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /Users/adarr/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /Users/adarr/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/adarr/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.9ms)
+  Rendered /Users/adarr/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/adarr/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/adarr/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/adarr/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/adarr/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (59.5ms)
+  Rendered /Users/adarr/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/adarr/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/adarr/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (123.3ms)
+
+
+Started POST "/posts" for ::1 at 2016-06-06 11:55:59 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BltO7WbISnDWdk9EKTxA0psb60BIqPgipMlFMvxwrNfjR4S9TkFDWtmW/1AnOCux+x8OP0oGtfflowdkTmhnJw==", "post"=>{"name"=>"Loaderio1:name", "title"=>"Loaderio1:title", "content"=>"adfasdf"}, "commit"=>"Create Post"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "posts" ("name", "title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Loaderio1:name"], ["title", "Loaderio1:title"], ["content", "adfasdf"], ["created_at", "2016-06-06 15:55:59.248877"], ["updated_at", "2016-06-06 15:55:59.248877"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 19ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/posts" for ::1 at 2016-06-06 11:55:59 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 37ms (Views: 34.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-06-06 11:58:17 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (3.2ms)
+  Rendered posts/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-06-06 12:36:17 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (5.2ms)
+  Rendered posts/new.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 58ms (Views: 44.3ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/posts" for ::1 at 2016-06-06 12:36:30 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UC+/ue6+O0vbEZ9w6ZnE6IJA0V8YpbQGvGLvt8N4vAS1M3XpxjcyYdTxL2Tnna+L4kQ0IBoL+dP9CK3hcWB39A==", "post"=>{"name"=>"test with auth", "title"=>"test with auth", "content"=>"ddd"}, "commit"=>"Create Post"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "posts" ("name", "title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "test with auth"], ["title", "test with auth"], ["content", "ddd"], ["created_at", "2016-06-06 16:36:30.340908"], ["updated_at", "2016-06-06 16:36:30.340908"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 11ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/posts" for ::1 at 2016-06-06 12:36:30 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 26ms (Views: 25.4ms | ActiveRecord: 0.2ms)

@@ -15,6 +15,7 @@ class PostsController < ApplicationController
 
   # GET /posts/new
   def new
+    response.headers['X-Csrf-Token'] = form_authenticity_token
     @post = Post.new
   end
 
@@ -28,7 +29,7 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
 
     if @post.save
-      Resque.enqueue(Sleeper, 5)
+      #Resque.enqueue(Sleeper, 5)
 
       flash[:notice] = "Post was created"
       redirect_to posts_path
