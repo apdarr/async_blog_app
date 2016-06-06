@@ -3145,3 +3145,32 @@ ActionController::RoutingError (uninitialized constant LoaderioController):
   Rendered /Users/adarr/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
   Rendered /Users/adarr/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
   Rendered /Users/adarr/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (165.4ms)
+
+
+Started GET "/loaderio-a9d0e1bd27270331dace4582775957b2.html" for ::1 at 2016-06-06 10:41:36 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (2.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+SyntaxError (/Users/adarr/Documents/code/async_blog_app/app/controllers/loaderio_controller.rb:13: syntax error, unexpected keyword_end, expecting end-of-input):
+  app/controllers/loaderio_controller.rb:13: syntax error, unexpected keyword_end, expecting end-of-input
+
+
+  Rendered /Users/adarr/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/adarr/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /Users/adarr/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (11.8ms)
+  Rendered /Users/adarr/.rvm/gems/ruby-2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (83.4ms)
+  Rendered /Users/adarr/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.2ms)
+  Rendered /Users/adarr/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/adarr/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/adarr/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/adarr/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (99.2ms)
+  Rendered /Users/adarr/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/adarr/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/adarr/.rvm/gems/ruby-2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (194.9ms)
+
+
+Started GET "/loaderio-a9d0e1bd27270331dace4582775957b2.html" for ::1 at 2016-06-06 10:42:11 -0400
+Processing by LoaderioController#verify as HTML
+  Parameters: {"id"=>"a9d0e1bd27270331dace4582775957b2"}
+  Rendered text template (0.4ms)
+Sent data  (6.4ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)

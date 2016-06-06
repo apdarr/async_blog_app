@@ -118,3 +118,25 @@
 [2016-06-06 10:33:12 -0400 adarr-ltm.internal.salesforce.com (84317)] INFO : Doing deferred dependency-detection before Rack startup
 [2016-06-06 10:33:12 -0400 adarr-ltm.internal.salesforce.com (84317)] INFO : Installing Sinatra instrumentation
 [2016-06-06 10:38:31 -0400 adarr-ltm.internal.salesforce.com (84317)] INFO : Starting Agent shutdown
+[2016-06-06 10:40:19 -0400 adarr-ltm.internal.salesforce.com (84576)] INFO : Starting the New Relic agent in "development" environment.
+[2016-06-06 10:40:19 -0400 adarr-ltm.internal.salesforce.com (84576)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2016-06-06 10:40:19 -0400 adarr-ltm.internal.salesforce.com (84576)] INFO : Reading configuration from config/newrelic.yml (/Users/adarr/Documents/code/async_blog_app)
+[2016-06-06 10:40:19 -0400 adarr-ltm.internal.salesforce.com (84576)] INFO : New Relic Agent Developer Mode enabled.
+[2016-06-06 10:40:19 -0400 adarr-ltm.internal.salesforce.com (84576)] INFO : Environment: development
+[2016-06-06 10:40:19 -0400 adarr-ltm.internal.salesforce.com (84576)] INFO : Dispatcher: webrick
+[2016-06-06 10:40:19 -0400 adarr-ltm.internal.salesforce.com (84576)] INFO : Application: async_blog_app (Development)
+[2016-06-06 10:40:20 -0400 adarr-ltm.internal.salesforce.com (84576)] INFO : Installing ActiveJob instrumentation
+[2016-06-06 10:40:20 -0400 adarr-ltm.internal.salesforce.com (84576)] INFO : Installing ActiveRecord 4+ instrumentation
+[2016-06-06 10:40:20 -0400 adarr-ltm.internal.salesforce.com (84576)] INFO : Installing Net instrumentation
+[2016-06-06 10:40:20 -0400 adarr-ltm.internal.salesforce.com (84576)] INFO : Installing deferred Rack::Builder instrumentation
+[2016-06-06 10:40:20 -0400 adarr-ltm.internal.salesforce.com (84576)] INFO : Installing Rack::Builder middleware instrumentation
+[2016-06-06 10:40:20 -0400 adarr-ltm.internal.salesforce.com (84576)] INFO : Installing Rails 3+ middleware instrumentation
+[2016-06-06 10:40:20 -0400 adarr-ltm.internal.salesforce.com (84576)] INFO : Installing Redis Instrumentation
+[2016-06-06 10:40:20 -0400 adarr-ltm.internal.salesforce.com (84576)] INFO : Installing Resque instrumentation
+[2016-06-06 10:40:20 -0400 adarr-ltm.internal.salesforce.com (84576)] INFO : Installing Rails 4 Controller instrumentation
+[2016-06-06 10:40:20 -0400 adarr-ltm.internal.salesforce.com (84576)] INFO : Installing Rails 4 view instrumentation
+[2016-06-06 10:40:20 -0400 adarr-ltm.internal.salesforce.com (84576)] INFO : Installing Rails 4 Error instrumentation
+[2016-06-06 10:40:20 -0400 adarr-ltm.internal.salesforce.com (84576)] INFO : Finished instrumentation
+[2016-06-06 10:40:21 -0400 adarr-ltm.internal.salesforce.com (84576)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1308506/applications/16928094
+[2016-06-06 10:40:21 -0400 adarr-ltm.internal.salesforce.com (84576)] INFO : Doing deferred dependency-detection before Rack startup
+[2016-06-06 10:40:21 -0400 adarr-ltm.internal.salesforce.com (84576)] INFO : Installing Sinatra instrumentation
