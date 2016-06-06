@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   root "posts#index"
 
   get 'new' => 'posts#new'
+
+  get 'loaderio-:id' => 'loaderio#verify'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
