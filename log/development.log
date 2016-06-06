@@ -3181,3 +3181,26 @@ Processing by PostsController#index as HTML
   [1m[35mPost Load (1.8ms)[0m  SELECT "posts".* FROM "posts"
   Rendered posts/index.html.erb within layouts/application (19.2ms)
 Completed 200 OK in 450ms (Views: 440.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for ::1 at 2016-06-06 10:52:34 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 72ms (Views: 69.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/loaderio-a9d0e1bd27270331dace4582775957b2.html" for ::1 at 2016-06-06 10:52:50 -0400
+Processing by LoaderioController#verify as HTML
+  Parameters: {"id"=>"a9d0e1bd27270331dace4582775957b2"}
+  Rendered text template (0.2ms)
+Sent data  (0.6ms)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/loaderio-a9d0e1bd27270331dace4582775957b2" for ::1 at 2016-06-06 10:52:55 -0400
+Processing by LoaderioController#verify as HTML
+  Parameters: {"id"=>"a9d0e1bd27270331dace4582775957b2"}
+  Rendered text template (0.3ms)
+Sent data  (0.7ms)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)

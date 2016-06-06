@@ -5,8 +5,6 @@ source 'https://rubygems.org'
 
 gem 'newrelic_rpm'
 
-gem 'scout_apm'
-
 gem 'rails', '4.2.6'
 # Use sqlite3 as the database for Active Record
 # Use SCSS for stylesheets
