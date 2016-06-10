@@ -4,6 +4,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
+    response.headers['X-Csrf-Token'] = form_authenticity_token
     @posts = Post.all
     puts "count#index.load=1"
   end
@@ -15,7 +16,7 @@ class PostsController < ApplicationController
 
   # GET /posts/new
   def new
-    response.headers['X-Csrf-Token'] = form_authenticity_token
+    #response.headers['X-Csrf-Token'] = form_authenticity_token
     @post = Post.new
   end
 
