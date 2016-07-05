@@ -1,13 +1,13 @@
-require 'resque/server'
+#require 'resque/server'
 
 Rails.application.routes.draw do
-  mount Resque::Server.new, at: "/resque"
+  #mount Resque::Server.new, at: "/resque"
 
   resources :posts
 
   root "posts#index"
 
-  get 'new' => 'posts#new'
+  #get 'new' => 'posts#new'
 
   get 'loaderio-:id' => 'loaderio#verify'
 
